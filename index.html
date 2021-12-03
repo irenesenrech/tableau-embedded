@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Embedded test</title>
+        <script type="text/javascript" src='https://tableauserver.theinformationlab.co.uk/javascripts/api/tableau-2.min.js'></script>
+    </head>
+    <body onload="initViz();">
+        <select name="Selected view" id="db_selector" onchange="resetViz();">
+            <option value="SuperstoreTest_16354975215580/Overview">SuperstoreTest_16354975215580/Overview</option>
+            <option value="ucrania/Dashboard1">ucrania/Dashboard1</option>
+            <option value="Customers">Customers</option>
+            <option value="Shipping">Shipping</option>
+            <option value="Performance">Performance</option>
+            <option value="Forecast">Forecast</option>
+            <option value="WhatIfForecast">What If Forecast</option>
+        </select>
+        <div id="vizContainer">
+        </div>
+        <p id="description"></p>
+        <div id="markDetails"></div>
+        <script type="text/javascript" src="./app.js"></script>
+    </body>
+</html>
